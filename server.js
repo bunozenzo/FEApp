@@ -16,7 +16,7 @@ const forceSSL = function () {
 app.use(express.static('./dist/FEApp'));
  
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname,'/dist/FEApp/index.html'));
+  res.sendFile(path.join('ePortfolio','/dist/FEApp/index.html'));
 });
  
 app.use(forceSSL());
